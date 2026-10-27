@@ -1,0 +1,12 @@
+[project]
+name = "mcp-owasp-top10-demo"
+version = "1.0.0"
+description = "Servidor MCP deliberadamente vulnerable (OWASP MCP Top 10) con mitigaciones — material formativo BIT UP 2026."
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.26.0", "pydantic>=2.11", "cryptography>=43.0", "pyjwt>=2.10"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
